@@ -6,7 +6,17 @@
 </head>
 <body>
   <a href="itms-services://?action=download-manifest&url=https://playstore.innolux.com/appstorage/Download/INXAPPStore/iOS/Final/INXAPPStore.plist">
-    安裝INXAPPStore
+    安裝INXAPPStore(1)
   </a>
+  <br>
+  <button onclick="installApp()">
+        安裝INXAPPStore(2)
+    </button>
+    <script>
+        function installApp() {
+            window.location.href =
+            'itms-services://?action=download-manifest&url=https://playstore.innolux.com/appstorage/Download/INXAPPStore/iOS/Final/INXAPPStore.plist';
+        }
+    </script>
 </body>
 </html>
